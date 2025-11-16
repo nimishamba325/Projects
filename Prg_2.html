@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+<title>Timetable</title>
+</head>
+<style>
+table{
+border-collapse:collapse;
+width:100%;
+text-align:center;
+}
+th,td{
+border:1px solid black;
+padding:10px;
+}
+th{
+background-color:#f2f2f2;
+}
+tr:nth-child(even){
+background-color:#f9f9f9;
+}
+tr:nth-child(odd){
+background-color:#e8f5e9;
+}
+.elective{
+background-color:#ffeb3b;
+}
+.lab{
+background-color:#ffccbc;
+}
+tfoot{
+background-color:#cfd8dc;
+font-weight:bold;
+}
+</style>
+<body>
+<h1>Class Time table</h1>
+<table>
+<thead>
+<tr>
+<th rowspan="2">Day</th>
+<th colspan="5">Subject/Time</th>
+</tr>
+<tr>
+<th>9:00-10:00</th>
+<th>10:00-11:00</th>
+
+<th>11:00-12:00</th>
+
+<th>1:00-2:00</th>
+
+<th>2:00-3:00</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Monday</td>
+<td>mathematics</td>
+<td>Physics</td>
+<td class="lab" colspan="2">Physics lab</td>
+<td>English</td>
+</tr>
+<tr>
+<td>Tuesday</td>
+<td>mathematics</td>
+<td>Chemistry</td>
+<td class="elective">Elective-AI</td>
+<td>English</td>
+<td>Free-period</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td class="elective" colspan="2">Elective Machine Learning</td>
+<td>Chemistry</td>
+<td>English</td>
+<td>Mathematics</td>
+</tr>
+<tr>
+<td>Thursday</td>
+<td>mathematics</td>
+<td>Chemistry</td>
+<td>Physics</td>
+<td>Computer-Science</td>
+<td class="elective">Data Science</td>
+</tr>
+<tr>
+<td>Friday</td>
+<td>English</td>
+<td class="lab" colspan="2">Computer Science lab</td>
+<td>Data Science</td>
+<td>Mathematics</td>
+</tr>
+</tbody>
+
+<tfoot>
+<tr>
+<td colspan="6">Note:Lab sessions and electives are highlighted in different colors</td>
+</tr>
+</tfoot>
+</table>
+</body>
+</html>
+
+
+
